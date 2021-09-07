@@ -1,0 +1,841 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-07T03:13:16.924Z",
+        "line": 3,
+        "name": "User melakukan permohonan reset password akun",
+        "description": "",
+        "id": "forgot-password;user-melakukan-permohonan-reset-password-akun",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9203449200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Main Screen from PS Enterprise Gameshop Apps",
+            "match": {
+              "location": "StepDefinitions.ForgotPass.User_is_on_main_screen_from_ps_enterprise_gameshop_apps()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2583579400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click Lost Your Password button",
+            "match": {
+              "location": "StepDefinitions.ForgotPass.user_click_lost_your_password_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34978000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Lost Password Page",
+            "match": {
+              "location": "StepDefinitions.ForgotPass.user_is_on_lost_password_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 151415600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User fill the registered email",
+            "match": {
+              "location": "StepDefinitions.ForgotPass.user_fill_the_registered_email()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3053901700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click Reset Password button",
+            "match": {
+              "location": "StepDefinitions.ForgotPass.user_click_reset_password_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 446726000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User get info \u0027Password reset email has been sent\u0027",
+            "match": {
+              "location": "StepDefinitions.ForgotPass.user_get_info()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Forgot Password",
+    "description": "",
+    "id": "forgot-password",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/forgot_pass.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-07T03:13:32.608Z",
+        "line": 12,
+        "name": "User melakukan login manual hingga berhasil tanpa menggunakan fitur Remember Me",
+        "description": "",
+        "id": "login-manual;user-melakukan-login-manual-hingga-berhasil-tanpa-menggunakan-fitur-remember-me;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6968068300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Log In and Sign Up Page from PS Enterprise Gameshop Apps",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_on_log_in_and_sign_up_page_from_ps_enterprise_gameshop_apps()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 312807300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User fill the registered and verified aulyaraudahannabila@gmail.com on the login email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aulyaraudahannabila@gmail.com",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_fill_the_registered_email_on_the_login_email_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 334866700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User fill the correct raudah10aulya on the login password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "raudah10aulya",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_fill_the_correct_password_on_the_login_password_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2660975900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on Log In Button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_click_on_log_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 274831500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is on My Account Page from Apps",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_on_my_account_page_from_apps()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-07T03:13:43.215Z",
+        "line": 24,
+        "name": "User melakukan login manual hingga berhasil dengan menggunakan fitur Remember Me",
+        "description": "",
+        "id": "login-manual;user-melakukan-login-manual-hingga-berhasil-dengan-menggunakan-fitur-remember-me;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6873507700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on Log In and Sign Up Page from PS Enterprise Gameshop Apps",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_on_log_in_and_sign_up_page_from_ps_enterprise_gameshop_apps()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 150908600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click on Remember Me checklist box button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_click_on_remember_me_checklist_box_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 589637400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User fill the registered and verified aulyaraudahannabila@gmail.com on the login email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aulyaraudahannabila@gmail.com",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_fill_the_registered_email_on_the_login_email_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 233857100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User fill the correct raudah10aulya on the login password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "raudah10aulya",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.user_fill_the_correct_password_on_the_login_password_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2352517600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click on Log In Button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_click_on_log_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 293820000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on My Account Page from Apps",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_on_my_account_page_from_apps()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Manual",
+    "description": "",
+    "id": "login-manual",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-07T03:13:53.747Z",
+        "line": 3,
+        "name": "User melakukan login dengan menggunakan akun facebook",
+        "description": "",
+        "id": "login-facebook;user-melakukan-login-dengan-menggunakan-akun-facebook",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7899753200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Main Screen from PS Enterprise Gameshop App",
+            "match": {
+              "location": "StepDefinitions.LoginFacebook.user_is_on_main_screen_from_ps_enterprise_gameshop_app()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5473909300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click Login With Facebook button",
+            "match": {
+              "location": "StepDefinitions.LoginFacebook.user_click_with_facebook_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28983000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on facebook login page",
+            "match": {
+              "location": "StepDefinitions.LoginFacebook.user_is_on_facebook_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#email\"}\n  (Session info: chrome\u003d93.0.4577.63)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-beta-4\u0027, revision: \u002729f46d02dd\u0027\nSystem info: host: \u0027DESKTOP-0QRM3M5\u0027, ip: \u0027192.168.0.156\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [8e43557791e2b69688d393af4ddb8ba5, findElement {using\u003did, value\u003demail}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\\Users\\arbim\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63581/devtoo..., se:cdpVersion: 93.0.4577.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8e43557791e2b69688d393af4ddb8ba5\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)\r\n\tat StepDefinitions.LoginFacebook.user_fill_the_email_from_facebook_account(LoginFacebook.java:41)\r\n\tat ✽.User fill the email from facebook account(file:///F:/eclipse-workspace/CucumberSeleniumJava/src/test/resources/Features/login_facebook.feature:7)\r\n",
+              "duration": 26658100,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User fill the email from facebook account",
+            "match": {
+              "location": "StepDefinitions.LoginFacebook.user_fill_the_email_from_facebook_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User fill the correct password",
+            "match": {
+              "location": "StepDefinitions.LoginFacebook.user_fill_the_correct_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User click on Facebook Log In Button",
+            "match": {
+              "location": "StepDefinitions.LoginFacebook.user_click_on_facebook_log_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003900,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User is on My Account Detail Page",
+            "match": {
+              "location": "StepDefinitions.LoginFacebook.user_is_on_my_account_detail_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Facebook",
+    "description": "",
+    "id": "login-facebook",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login_facebook.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-07T03:14:07.221Z",
+        "line": 16,
+        "name": "User melakukan login dengan menggunakan akun google lain yang belum login",
+        "description": "",
+        "id": "login-google;user-melakukan-login-dengan-menggunakan-akun-google-lain-yang-belum-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14684753500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Log In and Sign Up Page from PS Enterprise Gameshop App",
+            "match": {
+              "location": "StepDefinitions.LoginGoogleSteps.user_is_on_log_in_and_sign_up_page_from_ps_enterprise_gameshop_app()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3466665100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click Login With Google button",
+            "match": {
+              "location": "StepDefinitions.LoginGoogleSteps.user_click_login_with_google_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23989600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Google Email Log In page",
+            "match": {
+              "location": "StepDefinitions.LoginGoogleSteps.user_is_on_google_email_log_in_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 243141600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User fill a valid and registered google arbi.minanda@bibit.id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "arbi.minanda@bibit.id",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.LoginGoogleSteps.user_fill_a_valid_and_registered_google_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2143202600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click Next button",
+            "match": {
+              "location": "StepDefinitions.LoginGoogleSteps.user_click_next_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41963200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on Google Password Log In Page",
+            "match": {
+              "location": "StepDefinitions.LoginGoogleSteps.user_is_on_google_password_log_in_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 144393100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User fill a correct ArbiQA10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ArbiQA10",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.LoginGoogleSteps.user_fill_a_correct_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2115676100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click Next button",
+            "match": {
+              "location": "StepDefinitions.LoginGoogleSteps.user_click_next_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4708136400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on Detail My Account Page from Apps",
+            "match": {
+              "location": "StepDefinitions.LoginGoogleSteps.user_is_on_my_account_page_from_apps()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Google",
+    "description": "",
+    "id": "login-google",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login_google.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-07T03:14:34.819Z",
+        "line": 17,
+        "name": "User melakukan registrasi dengan mengisi seluruh field hingga berhasil",
+        "description": "",
+        "id": "registration;user-melakukan-registrasi-dengan-mengisi-seluruh-field-hingga-berhasil;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7410200700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "New User is on Log In and Sign Up Page from PS Enterprise Gameshop Apps",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.new_user_is_on_log_in_and_sign_up_page_from_ps_enterprise_gameshop_apps()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 283829900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User choose one of Favorite Genre from dropdown list",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_choose_one_of_favorite_genre_from_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 588548300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User choose one of Favorite Console from dropdown list",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_choose_one_of_favorite_console_from_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 510746900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User choose one of Hobbies \u0026 Interests from dropdown list",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_choose_one_of_hobbies_interests_from_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 373514600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User choose one of Gender from two radiobuttons",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_choose_one_of_gender_from_two_radiobuttons()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 347894300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User fill a valid testing25@goo.co address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing25@goo.co",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.RegistSteps.user_fill_a_valid_email_address(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 531676100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User fill a valid dsahjjs123452 that contain at least nine characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dsahjjs123452",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.RegistSteps.user_fill_a_valid_password_that_contain_at_least_nine_characters(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 235852500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User fill the same dsahjjs123452 in confirm password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dsahjjs123452",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.RegistSteps.user_fill_the_same_password_in_confirm_password_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1818659100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click the Register button",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_click_the_register_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3385530100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User get info \u0027Thank you for registering. Your account has to be activated before you can login. Please check your email.\u0027",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_get_info()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-07T03:14:50.338Z",
+        "line": 33,
+        "name": "User melakukan registrasi dengan email yang telah ter-registrasi",
+        "description": "",
+        "id": "registration;user-melakukan-registrasi-dengan-email-yang-telah-ter-registrasi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7287003700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "New User is on Log In and Sign Up Page from PS Enterprise Gameshop Apps",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.new_user_is_on_log_in_and_sign_up_page_from_ps_enterprise_gameshop_apps()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 488699100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User choose one of Favorite Genre from dropdown list",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_choose_one_of_favorite_genre_from_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 346386700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User choose one of Favorite Console from dropdown list",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_choose_one_of_favorite_console_from_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 538342800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User choose one of Hobbies \u0026 Interests from dropdown list",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_choose_one_of_hobbies_interests_from_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 326801400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User choose one of Gender from two radiobuttons",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_choose_one_of_gender_from_two_radiobuttons()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 445725300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User fill a valid testing1@goo.co address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing1@goo.co",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.RegistSteps.user_fill_a_valid_email_address(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 432733400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User fill a valid dsahjjs123452 that contain at least nine characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dsahjjs123452",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.RegistSteps.user_fill_a_valid_password_that_contain_at_least_nine_characters(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 208870100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User fill the same dsahjjs123452 in confirm password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dsahjjs123452",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.RegistSteps.user_fill_the_same_password_in_confirm_password_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1753501300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User click the Register button",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_click_the_register_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2150021000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User get error message \u0027Error: An account is already registered with your email address.\u0027",
+            "match": {
+              "location": "StepDefinitions.RegistSteps.user_get_error()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/registration.feature",
+    "tags": []
+  }
+]

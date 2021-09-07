@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="107.914">
+    <testcase classname="Forgot Password" name="User melakukan permohonan reset password akun" time="15.618">
+        <system-out><![CDATA[Given User is on Main Screen from PS Enterprise Gameshop Apps...............passed
+When User click Lost Your Password button...................................passed
+Then User is on Lost Password Page..........................................passed
+When User fill the registered email.........................................passed
+When User click Reset Password button.......................................passed
+Then User get info 'Password reset email has been sent'.....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Manual" name="User melakukan login manual hingga berhasil tanpa menggunakan fitur Remember Me" time="10.587">
+        <system-out><![CDATA[Given User is on Log In and Sign Up Page from PS Enterprise Gameshop Apps...passed
+When User fill the registered and verified aulyaraudahannabila@gmail.com on the login email field.passed
+When User fill the correct raudah10aulya on the login password field........passed
+When User click on Log In Button............................................passed
+Then User is on My Account Page from Apps...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Manual" name="User melakukan login manual hingga berhasil dengan menggunakan fitur Remember Me" time="10.515">
+        <system-out><![CDATA[Given User is on Log In and Sign Up Page from PS Enterprise Gameshop Apps...passed
+When User click on Remember Me checklist box button.........................passed
+When User fill the registered and verified aulyaraudahannabila@gmail.com on the login email field.passed
+When User fill the correct raudah10aulya on the login password field........passed
+When User click on Log In Button............................................passed
+Then User is on My Account Page from Apps...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Facebook" name="User melakukan login dengan menggunakan akun facebook" time="13.446">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#email&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'&#10;System info: host: 'DESKTOP-0QRM3M5', ip: '192.168.0.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8e43557791e2b69688d393af4ddb8ba5, findElement {using=id, value=email}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\arbim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63581/devtoo..., se:cdpVersion: 93.0.4577.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8e43557791e2b69688d393af4ddb8ba5" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is on Main Screen from PS Enterprise Gameshop App................passed
+When User click Login With Facebook button..................................passed
+Then User is on facebook login page.........................................passed
+When User fill the email from facebook account..............................failed
+When User fill the correct password.........................................skipped
+When User click on Facebook Log In Button...................................skipped
+Then User is on My Account Detail Page......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'DESKTOP-0QRM3M5', ip: '192.168.0.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e43557791e2b69688d393af4ddb8ba5, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\arbim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63581/devtoo..., se:cdpVersion: 93.0.4577.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e43557791e2b69688d393af4ddb8ba5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at StepDefinitions.LoginFacebook.user_fill_the_email_from_facebook_account(LoginFacebook.java:41)
+	at ✽.User fill the email from facebook account(file:///F:/eclipse-workspace/CucumberSeleniumJava/src/test/resources/Features/login_facebook.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="Login Google" name="User melakukan login dengan menggunakan akun google lain yang belum login" time="27.581">
+        <system-out><![CDATA[Given User is on Log In and Sign Up Page from PS Enterprise Gameshop App....passed
+When User click Login With Google button....................................passed
+Then User is on Google Email Log In page....................................passed
+When User fill a valid and registered google arbi.minanda@bibit.id..........passed
+When User click Next button.................................................passed
+Then User is on Google Password Log In Page.................................passed
+When User fill a correct ArbiQA10...........................................passed
+When User click Next button.................................................passed
+Then User is on Detail My Account Page from Apps............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Registration" name="User melakukan registrasi dengan mengisi seluruh field hingga berhasil" time="15.503">
+        <system-out><![CDATA[Given New User is on Log In and Sign Up Page from PS Enterprise Gameshop Apps.passed
+When User choose one of Favorite Genre from dropdown list...................passed
+When User choose one of Favorite Console from dropdown list.................passed
+When User choose one of Hobbies & Interests from dropdown list..............passed
+When User choose one of Gender from two radiobuttons........................passed
+When User fill a valid testing25@goo.co address.............................passed
+When User fill a valid dsahjjs123452 that contain at least nine characters..passed
+When User fill the same dsahjjs123452 in confirm password field.............passed
+When User click the Register button.........................................passed
+Then User get info 'Thank you for registering. Your account has to be activated before you can login. Please check your email.'.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Registration" name="User melakukan registrasi dengan email yang telah ter-registrasi" time="13.985">
+        <system-out><![CDATA[Given New User is on Log In and Sign Up Page from PS Enterprise Gameshop Apps.passed
+When User choose one of Favorite Genre from dropdown list...................passed
+When User choose one of Favorite Console from dropdown list.................passed
+When User choose one of Hobbies & Interests from dropdown list..............passed
+When User choose one of Gender from two radiobuttons........................passed
+When User fill a valid testing1@goo.co address..............................passed
+When User fill a valid dsahjjs123452 that contain at least nine characters..passed
+When User fill the same dsahjjs123452 in confirm password field.............passed
+When User click the Register button.........................................passed
+Then User get error message 'Error: An account is already registered with your email address.'.passed
+]]></system-out>
+    </testcase>
+</testsuite>
